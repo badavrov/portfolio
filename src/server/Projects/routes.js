@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.post('/api/users', (req, res) => {
+router.get('/project', (req, res) => {
   res.status(400).send('helolo');
 });
 
