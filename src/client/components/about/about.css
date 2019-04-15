@@ -1,0 +1,10 @@
+#about-container{
+    z-index: 5;
+    background-image: linear-gradient(rgba(44, 53, 49, 0.92), rgba(44,53,49,0.92)), url("/public/about-bg.png");
+    border-top: 0.5rem solid #2C3531
+}
+#about-photo{
+    position: relative;
+    text-align: center;
+    top: -11.1rem;
+}
