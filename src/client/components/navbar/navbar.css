@@ -3,7 +3,8 @@
     background: #2C3531;
     margin: 0;
     text-align: center;
-    padding: 0.3rem 1rem;
+    padding: 0.4rem 1rem;
+    z-index: 12;
 }
 .menu-link{
     text-decoration: none;

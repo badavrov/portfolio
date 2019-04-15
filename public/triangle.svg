@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="899.239" height="762.149" viewBox="0 0 899.239 762.149">
-  <g id="Group_31" data-name="Group 31" transform="translate(-451.761 -248.851)">
+<svg xmlns="http://www.w3.org/2000/svg" width="781" height="762.149" viewBox="0 0 781 762.149">
+  <g id="Group_31" data-name="Group 31" transform="translate(-570 -248.851)">
     <g id="Group_4" data-name="Group 4" transform="translate(2 26)">
       <g id="Group_2" data-name="Group 2" transform="translate(-11 -19)">
         <line id="Line_15" data-name="Line 15" x1="38.5" y2="43" transform="translate(1180 370.5)" fill="none" stroke="#116466" stroke-linecap="round" stroke-width="8"/>
@@ -39,9 +39,9 @@
           </g>
         </g>
       </g>
-      <text id="web_developer" data-name="web developer" transform="translate(452.297 272.086) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">web developer</tspan></text>
-      <text id="intergalactic_pirate" data-name="intergalactic pirate" transform="translate(581.279 417.124) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">intergalactic pirate</tspan></text>
-      <text id="web_designer" data-name="web designer" transform="translate(517.219 344.946) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">web designer</tspan></text>
+      <text id="web_developer" data-name="web developer" transform="translate(634.297 319.086) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">web developer</tspan></text>
+      <text id="intergalactic_pirate" data-name="intergalactic pirate" transform="translate(701.279 429.124) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">intergalactic pirate</tspan></text>
+      <text id="web_designer" data-name="web designer" transform="translate(668.219 373.946) rotate(25)" fill="#d9b08c" font-size="28" font-family="Lato-Regular, Lato" letter-spacing="0.184em"><tspan x="0" y="0">web designer</tspan></text>
     </g>
     <g id="Group_29" data-name="Group 29" transform="translate(0 -950)">
       <g id="iconfinder_node-js_1269842" transform="translate(556 1846)">

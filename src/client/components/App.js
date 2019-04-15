@@ -5,6 +5,7 @@ import Header from "./header/header";
 import NavBar from "./navbar/navbar";
 import Intro from "./intro/intro";
 import About from "./about/about";
+import Contacts from "./contacts/contacts";
 import "./App.css";
 
 export default class App extends React.Component {
@@ -21,8 +22,8 @@ export default class App extends React.Component {
 
   handleScroll(event) {
     if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
     ) {
       document.getElementById("navbar-container").style.position = "sticky";  
       document.getElementById("navbar-container").style.position = "-webkit-sticky"; 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
         <Intro />
       </Container>
         <About />
+        <Contacts />
       </Container>
     );
   }
