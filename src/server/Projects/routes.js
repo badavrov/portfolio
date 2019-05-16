@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get('/project', (req, res) => {
-  res.status(400).send('helolo');
+  res.status(200).send('helolo');
 });
 
 module.exports = router;

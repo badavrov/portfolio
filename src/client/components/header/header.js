@@ -10,15 +10,25 @@ export default class Header extends React.Component {
         <Row>
           <Col>
             <picture>
-              <img src="/public/logo.svg" className="img-fluid" id="logo" alt="..." />
+                <img src="/public/logo.svg" className="img-fluid" id="logo" />
             </picture>
           </Col>
           <Col>
             <picture>
-              <img src="/public/github.svg" className="img-fluid header-icons" alt="..." />
+              <a href="https://github.com/badavrov" target="_blank">
+                <img
+                  src="/public/github.svg"
+                  className="img-fluid header-icons"
+                />
+              </a>
             </picture>
             <picture>
-              <img src="/public/linkedin.svg" className="img-fluid header-icons" alt="..." />
+              <a href="https://www.linkedin.com/in/denislav-badavrov-17b734164/" target="_blank"> 
+                <img
+                  src="/public/linkedin.svg"
+                  className="img-fluid header-icons"
+                />
+              </a>
             </picture>
           </Col>
         </Row>

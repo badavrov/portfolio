@@ -14,27 +14,32 @@
 }
 .about-header{
     color: #116466;
-    font-size: 28px;
+    font-size: 26px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.5rem;
     font-weight: bold;
     padding: 0.5rem 0rem;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     border-bottom: 7px solid #116466;
 }
 #about-about{
-    padding: 0 0 2rem 0;
+    padding:0 0 1rem 0;
 }
 .about-text{
     font-family: 'Lato', sans-serif;
     color: #D1E8E2;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.1rem;
-    padding: 0 11rem;
 }
-.about-text-intro{
+.about-h1{
+    color: #116466;
     font-family: 'Lato', sans-serif;
-    color: #D1E8E2;
     font-size: 18px;
-    padding: 1rem;
+    padding: 0.3rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+.about-intro{
+    font-style: italic;
+    
 }

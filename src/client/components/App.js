@@ -9,28 +9,6 @@ import Contacts from "./contacts/contacts";
 import "./App.css";
 
 export default class App extends React.Component {
-  constructor() {
-    super();
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll(event) {
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      document.getElementById("navbar-container").style.position = "sticky";  
-      document.getElementById("navbar-container").style.position = "-webkit-sticky"; 
-      document.getElementById("navbar-container").style.top = "0"; 
-    }
-  }
-
   render() {
     return (
       <Container id="main-container" fluid={true}>
