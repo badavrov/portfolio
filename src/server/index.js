@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
+require('dotenv').config()
 
 const port = process.env.PORT || 8080;
 
@@ -12,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // sgMail -for email sending
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.SECRET_KEY);
 
 // Routes
 app.use('/api', require('./Projects/routes'));
