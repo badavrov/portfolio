@@ -1,6 +1,6 @@
-import ReactDOM from "react-dom";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import Logo from "./Logo";
 import "./header.css";
 
 export default class Header extends React.Component {
@@ -10,26 +10,18 @@ export default class Header extends React.Component {
         <Row>
           <Col>
             <picture>
-                <img src="/public/logo.svg" className="img-fluid" id="logo" />
+              <img src="/public/logo.svg" className="img-fluid" id="logo" />
             </picture>
           </Col>
           <Col>
-            <picture>
-              <a href="https://github.com/badavrov" target="_blank">
-                <img
-                  src="/public/github.svg"
-                  className="img-fluid header-icons"
-                />
-              </a>
-            </picture>
-            <picture>
-              <a href="https://www.linkedin.com/in/denislav-badavrov-17b734164/" target="_blank"> 
-                <img
-                  src="/public/linkedin.svg"
-                  className="img-fluid header-icons"
-                />
-              </a>
-            </picture>
+            <Logo
+              link={"https://github.com/badavrov"}
+              logoPath={"/public/github.svg"}
+            />
+            <Logo
+              link={"https://www.linkedin.com/in/denislav-badavrov-17b734164/"}
+              logoPath={"/public/linkedin.svg"}
+            />
           </Col>
         </Row>
       </Container>

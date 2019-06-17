@@ -4,9 +4,6 @@ import { Container, Media } from "reactstrap";
 import "./about.css";
 
 export default class App extends React.Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (
@@ -19,7 +16,7 @@ export default class App extends React.Component {
           <div className="about-header-div"><p className="about-header">ABOUT ME</p></div>
             <p className="about-text about-intro">
               Glad to see you on board digital traveler, you would probably like
-              to know me more before scrolling down... so let me introduce.
+              to know more about me before scrolling down... so let me introduce.
             </p>
             <p className="about-h1">History</p>
             <p className="about-text">

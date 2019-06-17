@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import React from "react";
 import {
   Container,
@@ -6,11 +5,12 @@ import {
   FormGroup,
   Label,
   Input,
-  Media,
   Row,
   Col
 } from "reactstrap";
 import "./contacts.css";
+import ContactsLogo from "./ContactsLogo";
+import swal from "sweetalert"
 
 export default class Contacts extends React.Component {
   constructor() {
@@ -25,16 +25,36 @@ export default class Contacts extends React.Component {
     };
   }
 
-  sendEmail = () => {
+sweetAlert(title, text, icon, button){
+    swal({
+      title: title,
+      text: text,
+      icon: icon,
+      button: button,
+    });
+}
+
+
+  sendEmail = event => {
+    event.preventDefault();
     const { email } = this.state;
-    console.log(email);
-    fetch(
-      `/api/send-email?recipient=${email.recipient}&sender=${
-        email.sender
-      }&subject=${email.subject}&text=${email.text}`
-    )
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    if (!email.sender) {
+      sweetAlert('No email!', 'Seems like you havent entered an email...', 'warning', {button:'Okay'})
+    }
+    if (!email.subject) {
+      sweetAlert('No subject!', 'Seems like you havent entered a subject...', 'warning', {button:'Okay'})
+    }
+    if (!email.text) {
+      sweetAlert('No text!', 'Seems like you havent entered a text...', 'warning', {button:'Okay'})
+    } else {
+      fetch(
+        `/api/send-email?recipient=${email.recipient}&sender=${
+          email.sender
+        }&subject=${email.subject}&text=${email.text}`
+      )
+        .then(res => sweetAlert('Email send!', 'Thank you for the email...', 'success', {button:'Okay'}))
+        .catch(err => err.json());
+    }
   };
 
   render() {
@@ -111,34 +131,20 @@ export default class Contacts extends React.Component {
             <p className="contacts-email">+359 089 5521 698</p>
           </Col>
         </Row>
-        <Row className="contacts-row" />
         <Row className="contacts-row">
           <Col>
-            <a
-              href="https://www.facebook.com/denials.basavriv/"
-              target="_blank"
-            >
-              <Media
-                className="contacts-svg"
-                object
-                src="/public/facebook.svg"
-              />
-            </a>
-
-            <a
-              href="https://www.instagram.com/denislavbadavrov/"
-              target="_blank"
-            >
-              <Media
-                className="contacts-svg"
-                object
-                src="/public/instagram.svg"
-              />
-            </a>
-
-            <a href="https://denislavbadavrov.tumblr.com/" target="_blank">
-              <Media className="contacts-svg" object src="/public/tumblr.svg" />
-            </a>
+            <ContactsLogo
+              link={"https://www.facebook.com/denials.basavriv/"}
+              logoPath={"/public/facebook.svg"}
+            />
+            <ContactsLogo
+              link={"https://www.instagram.com/denislavbadavrov/"}
+              logoPath={"/public/instagram.svg"}
+            />
+            <ContactsLogo
+              link={"https://denislavbadavrov.tumblr.com/"}
+              logoPath={"/public/tumblr.svg"}
+            />
           </Col>
         </Row>
       </Container>
