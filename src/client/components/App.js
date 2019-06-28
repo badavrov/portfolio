@@ -5,6 +5,7 @@ import NavBar from "./navbar/navbar";
 import Intro from "./intro/intro";
 import About from "./about/about";
 import Contacts from "./contacts/contacts";
+import Projects from "./projects/projects";
 import "./App.css";
 
 export default class App extends React.Component {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
         <Intro />
       </Container>
         <About />
+        <Projects />
         <Contacts />
       </Container>
     );

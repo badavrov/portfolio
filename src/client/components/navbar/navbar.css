@@ -12,8 +12,10 @@
     font-size: 22px;
     padding: 0 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color linear 1s;
 }
+
 .menu-link:hover{
-    text-decoration: none;
-    color: #D1E8E2;
-}   
+    color:#D1E8E2;
+}
+
