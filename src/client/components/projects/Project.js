@@ -28,7 +28,7 @@ export default class Project extends React.Component {
       <Col key={i} className="project-col">
             <h4>{item.title}</h4>
             <p>{item.describe}</p>
-            <img src={item.img}/>
+            <img src={item.img.projectsLandscape}/>
       </Col>
         ))}
       </Row>

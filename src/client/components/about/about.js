@@ -1,19 +1,18 @@
-import ReactDOM from "react-dom";
 import React from "react";
-import { Container, Media } from "reactstrap";
+import { Container, Media, Button } from "reactstrap";
 import "./about.css";
 import aboutPhoto from "../../../../public/about-photo.png";
 import aboutSkills from "../../../../public/skills.svg";
 
 export default class App extends React.Component {
-
   render() {
     return (
       <Container id="about-container" fluid={true}>
         <Container id="about-photo">
-          <Media object src={aboutPhoto}/>
+          <Media id="about-picture" object src={aboutPhoto}></Media>
         </Container>
         <Container id="about-info">
+          <a href="../../../../public/cv.pdf" target="_blank" download><Button id="download-cv">Download CV</Button></a>
           <Container id="about-about">
           <div className="about-header-div"><p className="about-header">ABOUT ME</p></div>
             <p className="about-text about-intro">
