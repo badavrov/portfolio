@@ -10,7 +10,7 @@ export default class Header extends React.Component {
         <Row>
           <Col>
             <picture>
-              <img src="/public/logo.svg" className="img-fluid" id="logo" />
+              <img src="*/public/logo.svg" className="img-fluid" id="logo" />
             </picture>
           </Col>
           <Col>
