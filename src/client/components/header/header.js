@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Logo from "./Logo";
 import "./header.css";
+import logoSvg from "/public/logo.svg"
 
 export default class Header extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class Header extends React.Component {
         <Row>
           <Col>
             <picture>
-              <img src="/public/logo.svg" className="img-fluid" id="logo" />
+              <img src={logoSvg} className="img-fluid" id="logo" />
             </picture>
           </Col>
           <Col>
