@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Logo from "./Logo";
 import "./header.css";
-import logoSvg from "/public/logo.svg"
+import logoSvg from "../../../../public/logo.svg"
 
 export default class Header extends React.Component {
   render() {
