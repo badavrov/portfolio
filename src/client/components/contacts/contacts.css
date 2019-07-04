@@ -1,5 +1,5 @@
 #contacts-container{
-    background-image: linear-gradient(rgba(44, 53, 49, 0.80), rgba(44,53,49,0.80)), url("/public/landscape.jpg");
+    background-image: linear-gradient(rgba(44, 53, 49, 0.80), rgba(44,53,49,0.80)), url("../../../../public/landscape.jpg");
     background-size: cover;
     border-top: 0.1rem solid #116466;
     text-align: center;

@@ -1,5 +1,5 @@
 #about-container{
-    background-image: linear-gradient(rgba(44, 53, 49, 0.92), rgba(44,53,49,0.92)), url("/public/about-bg.png");
+    background-image: linear-gradient(rgba(44, 53, 49, 0.92), rgba(44,53,49,0.92)), url("~/public/about-bg.png");
     background-size: cover;
     border-top: 0.5rem solid #2C3531;
     text-align: center;

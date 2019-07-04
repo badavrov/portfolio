@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Logo from "./Logo";
 import "./header.css";
-import logoSvg from "../../../../public/logo.svg"
+import logoSvg from "../../../../public/logo.svg";
+import logoGh from "../../../../public/github.svg";
+import logoLin from "../../../../public/linkedin.svg";
 
 export default class Header extends React.Component {
   render() {
@@ -17,11 +19,11 @@ export default class Header extends React.Component {
           <Col>
             <Logo
               link={"https://github.com/badavrov"}
-              logoPath={"/public/github.svg"}
+              logoPath={logoGh}
             />
             <Logo
               link={"https://www.linkedin.com/in/denislav-badavrov-17b734164/"}
-              logoPath={"/public/linkedin.svg"}
+              logoPath={logoLin}
             />
           </Col>
         </Row>

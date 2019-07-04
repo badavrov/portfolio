@@ -1,7 +1,7 @@
 #projects-container{
     padding: 10rem 0;
     border-top: 2px solid #D9B08C;
-    background:  linear-gradient(rgba(44, 53, 49, 0.90), rgba(44, 53, 49, 0.90)), url('/public/projectsbg.jpg') no-repeat fixed center;
+    background:  linear-gradient(rgba(44, 53, 49, 0.90), rgba(44, 53, 49, 0.90)), url("../../../../public/projectsbg.jpg") no-repeat fixed center;
 }
 
 #projects-row{

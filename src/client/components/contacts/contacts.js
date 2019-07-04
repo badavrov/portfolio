@@ -11,6 +11,9 @@ import {
 import "./contacts.css";
 import ContactsLogo from "./ContactsLogo";
 import swal from "sweetalert"
+import logoInsta from "../../../../public/instagram.svg";
+import logoTumblr from "../../../../public/tumblr.svg";
+import logoFbook from "../../../../public/facebook.svg";
 
 export default class Contacts extends React.Component {
   constructor() {
@@ -135,15 +138,15 @@ sweetAlert(title, text, icon, button){
           <Col>
             <ContactsLogo
               link={"https://www.facebook.com/denials.basavriv/"}
-              logoPath={"/public/facebook.svg"}
+              logoPath={logoFbook}
             />
             <ContactsLogo
               link={"https://www.instagram.com/denislavbadavrov/"}
-              logoPath={"/public/instagram.svg"}
+              logoPath={logoInsta}
             />
             <ContactsLogo
               link={"https://denislavbadavrov.tumblr.com/"}
-              logoPath={"/public/tumblr.svg"}
+              logoPath={logoTumblr}
             />
           </Col>
         </Row>

@@ -2,6 +2,8 @@ import ReactDOM from "react-dom";
 import React from "react";
 import { Container, Media } from "reactstrap";
 import "./about.css";
+import aboutPhoto from "../../../../public/about-photo.png";
+import aboutSkills from "../../../../public/skills.svg";
 
 export default class App extends React.Component {
 
@@ -9,7 +11,7 @@ export default class App extends React.Component {
     return (
       <Container id="about-container" fluid={true}>
         <Container id="about-photo">
-          <Media object src="/public/about-photo.png" />
+          <Media object src={aboutPhoto}/>
         </Container>
         <Container id="about-info">
           <Container id="about-about">
@@ -37,7 +39,7 @@ export default class App extends React.Component {
           </Container>
           <Container id="about-skills">
             <p className="about-header">SKILLS</p>
-            <Media object src="/public/skills.svg" className="img-fluid"  />
+            <Media object src={aboutSkills} className="img-fluid"  />
           </Container>
         </Container>
       </Container>
