@@ -1,67 +1,102 @@
-#about-container{
-    background-image: linear-gradient(rgba(44, 53, 49, 0.92), rgba(44,53,49,0.92)), url("../../../../public/about-bg.png");
-    background-size: cover;
-    border-top: 0.5rem solid #2C3531;
-    text-align: center;
+#about-container {
+  background-image: linear-gradient(
+      rgba(44, 53, 49, 0.92),
+      rgba(44, 53, 49, 0.92)
+    ),
+    url("../../../../public/about-bg.png");
+  background-size: cover;
+  border-top: 0.5rem solid #2c3531;
+  text-align: center;
 }
-#about-photo{
+#about-photo {
+  position: relative;
+  top: -11.3rem;
+}
+#about-info {
+  position: relative;
+  bottom: 8rem;
+}
+.about-header {
+  color: #116466;
+  font-size: 26px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0rem;
+  margin: 1rem 0 1rem 0;
+  border-bottom: 7px solid #116466;
+}
+#about-about {
+  padding: 0 0 1rem 0;
+}
+.about-text {
+  font-family: "Lato", sans-serif;
+  color: #d1e8e2;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+.about-h1 {
+  color: #116466;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  padding: 0.3rem;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+.about-intro {
+  font-style: italic;
+}
+#download-cv {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid #116466;
+  background: #2c3531;
+  color: #116466;
+  transition: color linear 0.7s, border linear 0.7s;
+}
+#download-cv:hover {
+  color: #d1e8e2;
+  border: 2px solid #d1e8e2;
+}
+#about-picture {
+  transition: transform 1s;
+}
+#about-picture:hover {
+  transform: scale(1.05);
+}
+#about-skills img{
+  padding: 0.5rem 0 0 0;
+}
+@media only screen and (max-width: 600px) {
+  #about-photo{
+    padding: 0 0 4rem 0;
+  }
+  #about-picture{
+    width: 75%;
     position: relative;
-    top: -11.1rem;
+    top: 1.5rem;
+  }
+  #about-picture:hover {
+    transform: none;
+  }
+  .about-text {
+    font-size: 14px;
+    letter-spacing: 0rem;
+  }
 }
-#about-info{
-    position: relative;
-    bottom: 8rem;
+
+@media only screen and (max-width: 376px) {
+  #about-picture{
+    top: 2.7rem;
+  }
 }
-.about-header{
-    color: #116466;
-    font-size: 26px;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    padding: 0.5rem 0rem;
-    margin: 1rem 0 1rem 0;
-    border-bottom: 7px solid #116466;
-}
-#about-about{
-    padding:0 0 1rem 0;
-}
-.about-text{
-    font-family: 'Lato', sans-serif;
-    color: #D1E8E2;
-    font-size: 16px;
-    letter-spacing: 0.1rem;
-}
-.about-h1{
-    color: #116466;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    padding: 0.3rem;
-    letter-spacing: 0.3rem;
-    font-weight: bold;
-}
-.about-intro{
-    font-style: italic;
-    
-}
-#download-cv{
-    position: relative;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    margin: 0 0 1rem 0;
-    text-align: center;
-    padding: 1rem;
-    border: 2px solid #116466;
-    background: #2C3531;
-    color: #116466;
-    transition: color linear .7s, border linear .7s;
-}
-#download-cv:hover{
-    color:#D1E8E2;
-    border: 2px solid #D1E8E2;
-}
-#about-picture{
-    transition: transform 1s;
-}
-#about-picture:hover{
-    transform: scale(1.05);
+
+@media only screen and (max-width: 321px) {
+  #about-picture{
+    top: 4.1rem;
+  }
 }

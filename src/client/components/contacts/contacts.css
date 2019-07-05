@@ -1,91 +1,116 @@
-#contacts-container{
-    background-image: linear-gradient(rgba(44, 53, 49, 0.80), rgba(44,53,49,0.80)), url("../../../../public/landscape.jpg");
-    background-size: cover;
-    border-top: 0.1rem solid #116466;
-    text-align: center;
-    padding: 4rem 1rem;
+#contacts-container {
+  background-image: linear-gradient(
+      rgba(44, 53, 49, 0.8),
+      rgba(44, 53, 49, 0.8)
+    ),
+    url("../../../../public/landscape.jpg");
+  background-size: cover;
+  border-top: 0.1rem solid #116466;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-.contacts-work{
-    color:#FFCB9A;
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 0.4rem;
+.contacts-work {
+  color: #ffcb9a;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
 }
 
-.contacts-row{
-    padding: 1rem;
+.contacts-row {
+  padding: 1rem;
 }
 
-.contacts-email{
-    color:#FFCB9A;
+.contacts-email {
+  color: #ffcb9a;
 }
 
-.contacts-svg{
-    margin: 0rem 0.7rem;
+.contacts-svg {
+  margin: 0rem 0.7rem;
 }
 
-.contacts-email{
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    margin: 0.3rem;
+.contacts-email {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  margin: 0.3rem;
 }
 
-.contacts-button{
-    border: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.2rem;
-    color: #2C3531;
-    background-color: #D9B08C;
-    width: 200px;
-    height: 60px;
-    border-radius: 10px;
+.contacts-button {
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  color: #2c3531;
+  background-color: #d9b08c;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
 }
-.contacts-button:hover{
-    color: #2C3531;
-    background-color: #FFCB9A;
-}
-
-.contacts-svg:hover{
-    animation: pulse 0.5s ease-in infinite;
-}
-#sendemail-container{
-    padding: 2rem 0;
+.contacts-button:hover {
+  color: #2c3531;
+  background-color: #ffcb9a;
 }
 
-#email-sender, #email-subject{
-    width: 33%;
-    height: 50px;
-    margin: 0 auto;
-    float: none;
+.contacts-svg:hover {
+  animation: pulse 0.5s ease-in infinite;
 }
-.email-info{
-    color:#D9B08C;
+#sendemail-container {
+  padding: 2rem 0;
 }
-#email-textarea{
-    width: 70%;
-    height: 120px;
-    margin: 0 auto;
-    float: none;
+
+#email-sender,
+#email-subject {
+  width: 33%;
+  height: 50px;
+  margin: 0 auto;
+  float: none;
 }
-.email-input{
-    background-color: #2C3531 !important;
-    opacity: 0.9;
-    color: #D9B08C !important;
-    border:none !important;
+.email-info {
+  color: #d9b08c;
 }
-.email-input::placeholder{
-    color: #D9B08C !important;
-    font-weight: 100;
+#email-textarea {
+  width: 70%;
+  height: 120px;
+  margin: 0 auto;
+  float: none;
 }
-.email-input:focus{
-    box-shadow: 0 0 0 0.1rem #FFCB9A !important;
+.email-input {
+  background-color: #2c3531 !important;
+  opacity: 0.9;
+  color: #d9b08c !important;
+  border: none !important;
 }
-  
-@keyframes pulse{
-    25%  {transform: scale(0.9);}
-    75%  {transform: scale(1.1);}
+.email-input::placeholder {
+  color: #d9b08c !important;
+  font-weight: 100;
+}
+.email-input:focus {
+  box-shadow: 0 0 0 0.1rem #ffcb9a !important;
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(0.9);
   }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    #contacts-container {
+    padding: 3rem 1rem;
+  }
+    .contacts-work {
+      font-size: 20px;
+    }
+    #email-sender,
+    #email-subject {
+      width: 70%;
+    }
+    #email-textarea {
+      width: 100%;
+    }
+}

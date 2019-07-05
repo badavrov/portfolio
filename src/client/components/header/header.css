@@ -1,14 +1,25 @@
-#header-container{
-    padding:1rem;
+#header-container {
+  padding: 1rem;
 }
-#header-container img{
-    padding: 0 1rem 0 1rem;
+#header-container img {
+  padding: 0 1rem 0 1rem;
 }
-.header-icons{
-    float:right
+#header-icons {
+    text-align: right;
+    display:inline;
 }
 
+.logos:hover {
+  animation: pulse 0.5s ease-in infinite;
+}
 
-.header-icons:hover{
-    animation: pulse 0.5s ease-in infinite;
+@media only screen and (max-width: 426px) {
+    .logos{
+        width:35%;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .logos{
+        width:40%;
+    }
 }

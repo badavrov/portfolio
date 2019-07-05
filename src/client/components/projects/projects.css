@@ -1,29 +1,87 @@
-#projects-container{
-    padding: 10rem 0;
-    border-top: 2px solid #D9B08C;
-    background:  linear-gradient(rgba(44, 53, 49, 0.90), rgba(44, 53, 49, 0.90)), url("../../../../public/projectsbg.jpg") no-repeat fixed center;
+#projects-container {
+  padding: 5rem 5rem;
+  width: 100%;
+  border-top: 2px solid #d9b08c;
+  background: linear-gradient(rgba(44, 53, 49, 0.9), rgba(44, 53, 49, 0.9)),
+    url("../../../../public/projectsbg.jpg") no-repeat fixed center;
+}
+#projects-container div{
+  padding: 1.2rem 0;
+}
+#projects-row {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+#projects-row h4,
+p {
+  color: #d9b08c;
+}
+#projects-row img {
+  max-width: 20rem;
+  height: 10em;
+  opacity: 0.7;
+}
+#projects-row img:hover {
+  opacity: 1;
+}
+.project-col {
+  padding: 3em 0;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+}
+.project-col:hover {
+  transform: scale(1.2);
+}
+#projects-header{
+color: #d9b08c;
+font-size: 26px;
+font-family: "Lato", sans-serif;
+letter-spacing: 0.5rem;
+font-weight: bold;
+padding: 0.5rem 0rem;
+margin: 0 auto;
+border-bottom: 7px solid #d9b08c;
+
 }
 
-#projects-row{
-    margin: 0 auto;
-    text-align: center;
-    width: 90%;
+@media only screen and (min-width: 2024px) {
+  .project-col {
+    margin: 0;
+  }
+  #projects-row img {
+    width: 100%;
+  }
 }
-#projects-row h4, p{
-    color: #D9B08C;
-}
-#projects-row img{
-    height: 10em;
-    opacity: 0.7;
-}
-#projects-row img:hover{
+
+@media only screen and (max-width: 600px) {
+  #projects-container {
+  padding: 4rem 0;
+  }
+  .project-col {
+    margin: 0;
+  }
+  .project-col:hover {
+    transform: none;
+  }
+  #projects-row img {
     opacity: 1;
+  }
+  #projects-row {
+    padding: 0;
+  }
+  #projects-row div {
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
-.project-col{
-    padding: 3em 0;
-    -webkit-transition: transform 1s;
-    transition: transform 1s;
-}
-.project-col:hover{
-    transform:scale(1.2);
+
+@media only screen and (max-width: 376px) {
+  .project-col {
+    margin: 0;
+  }
+  #projects-row img {
+    max-width: 17rem;
+  }
 }

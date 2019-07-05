@@ -16,14 +16,16 @@ export default class Header extends React.Component {
               <img src={logoSvg} className="img-fluid" id="logo" />
             </picture>
           </Col>
-          <Col>
+          <Col id="header-icons">
             <Logo
               link={"https://github.com/badavrov"}
               logoPath={logoGh}
+              id="logo-github"
             />
             <Logo
               link={"https://www.linkedin.com/in/denislav-badavrov-17b734164/"}
               logoPath={logoLin}
+              id="logo-linkedin"
             />
           </Col>
         </Row>

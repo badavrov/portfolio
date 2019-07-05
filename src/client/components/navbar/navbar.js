@@ -18,7 +18,7 @@ export default class NavBar extends React.Component {
       navBar.style.top = "0";
     }
     if (scrollTop < 50) {
-      navBar.style.padding = "1rem";
+      navBar.style.padding = "0.7rem";
       navBar.style.position = "static";
     }
   };
