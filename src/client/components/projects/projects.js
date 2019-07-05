@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
   render() {
     return (
       <Container id="projects-container" fluid={true}>
-        <div><center><span id="projects-header">Projects</span></center></div>
+        <div><center><span id="projects-header">PROJECTS</span></center></div>
         <Col id="projects-row">
         <Project/>
         </Col>

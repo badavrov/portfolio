@@ -1,4 +1,9 @@
 #contacts-container {
+  background-image: -webkit-linear-gradient(
+      rgba(44, 53, 49, 0.8),
+      rgba(44, 53, 49, 0.8)
+    ),
+    url("../../../../public/landscape.jpg");
   background-image: linear-gradient(
       rgba(44, 53, 49, 0.8),
       rgba(44, 53, 49, 0.8)
@@ -54,7 +59,8 @@
 }
 
 .contacts-svg:hover {
-  animation: pulse 0.5s ease-in infinite;
+  -webkit-animation: pulse 0.5s ease-in infinite;
+          animation: pulse 0.5s ease-in infinite;
 }
 #sendemail-container {
   padding: 2rem 0;
@@ -82,6 +88,18 @@
   color: #d9b08c !important;
   border: none !important;
 }
+.email-input::-webkit-input-placeholder {
+  color: #d9b08c !important;
+  font-weight: 100;
+}
+.email-input::-moz-placeholder {
+  color: #d9b08c !important;
+  font-weight: 100;
+}
+.email-input:-ms-input-placeholder {
+  color: #d9b08c !important;
+  font-weight: 100;
+}
 .email-input::placeholder {
   color: #d9b08c !important;
   font-weight: 100;
@@ -90,12 +108,25 @@
   box-shadow: 0 0 0 0.1rem #ffcb9a !important;
 }
 
-@keyframes pulse {
+@-webkit-keyframes pulse {
   25% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   75% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 

@@ -1,4 +1,9 @@
 #about-container {
+  background-image: -webkit-linear-gradient(
+      rgba(44, 53, 49, 0.92),
+      rgba(44, 53, 49, 0.92)
+    ),
+    url("../../../../public/about-bg.png");
   background-image: linear-gradient(
       rgba(44, 53, 49, 0.92),
       rgba(44, 53, 49, 0.92)
@@ -56,6 +61,7 @@
   border: 2px solid #116466;
   background: #2c3531;
   color: #116466;
+  -webkit-transition: color linear 0.7s, border linear 0.7s;
   transition: color linear 0.7s, border linear 0.7s;
 }
 #download-cv:hover {
@@ -63,10 +69,14 @@
   border: 2px solid #d1e8e2;
 }
 #about-picture {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 #about-picture:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 #about-skills img{
   padding: 0.5rem 0 0 0;
@@ -81,7 +91,8 @@
     top: 1.5rem;
   }
   #about-picture:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .about-text {
     font-size: 14px;
